@@ -1,0 +1,19 @@
+.head{
+    background-color: grey;
+}
+
+.side{
+    border: 0.5px, solid, gray;
+}
+.xc{
+    padding:5px;
+    border: 1px solid;
+    width: 100%;
+    height:75%;
+}
+.xf{
+    padding:5px;
+    border: 1px solid;
+    width: 25%;
+    height: 25%;
+}

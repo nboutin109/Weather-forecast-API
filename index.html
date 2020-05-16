@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ <div class = "container">
+     <div class = "row">
+         <h1 class="jumbtron head container h-100 d-flex justify-content-center">Weather Dashboard</h1>
+     </div>
+     <div class = "row">
+         <div class = "col-sm-4 side">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="text" id="citySearch">
+                <button class="btn btn-outline-success my-2 my-sm-0" id = "searchbtn" type="submit">Search</button>
+            </form>
+            <div id = "buttonDump"></div>
+         </div>
+         <div class = "col-sm-8 side">
+            <div class="xc" id = "day1"></div>
+            <div class="row"></div>
+            <div class = "xf" id = "day2"></div>
+            <div class = "xf" id = "day3"></div>
+            <div class = "xf" id = "day4"></div>
+            <div class = "xf" id = "day5"></div>
+            </div>
+         </div>
+     </div>
+ </div>
+
+
+
+
+
+
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="style.css"></script>
+</body>
+</html>
