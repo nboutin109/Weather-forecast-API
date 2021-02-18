@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
- <div class = "container">
-     <div class = "row">
-         <h1 class="jumbtron head container h-100 d-flex justify-content-center">Weather Dashboard</h1>
-     </div>
-     <div class = "row">
-         <div class = "col-sm-4 side">
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="text" id="citySearch">
-                <button class="btn btn-outline-success my-2 my-sm-0" id = "searchbtn" type="submit">Search</button>
-            </form>
-            <div id = "buttonDump"></div>
-         </div>
-         <div class = "col-sm-8 side">
-            <div class="xc" id = "day1"></div>
-            <div class="row"></div>
-            <div class = "xf" id = "day2"></div>
-            <div class = "xf" id = "day3"></div>
-            <div class = "xf" id = "day4"></div>
-            <div class = "xf" id = "day5"></div>
+    <div class="container">
+        <div class="row">
+            <h1 class="jumbtron head container d-flex justify-content-center PB roman">Weather Dashboard</h1>
+        </div>
+        <div class="row pad">
+            <div class="col-sm-4 side">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" id="searchInput">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="searchBtn" type="button">Search</button>
+                </form>
             </div>
-         </div>
-     </div>
- </div>
+            <div class="col-sm-8 pad bold bigger roman icon" id='city'></div>
+        </div>
+        <div class="row pad white">Always remember to bring your own sunshine!</div>
+        <div class="row side pad">
+            <div class="xc col-sm-4 pad">
+                <div id='date' class="bold"></div>
+                <img id='mainImg'>
+                <div id="desc"></div>
+                <div id="lTemp"></div>
+                <div id="hTemp"></div>
+                <div id="cTemp"></div>
+                <div id="humid"></div>
+                <div id="wind"></div>
+            </div>
+            <div class="col-sm-1 pad"></div>
+            <div class="col-sm-7 pad">
+                <div class="row xf">
+                    <div id='day0' class='bold wide'></div>
+                    <img src='' id="day0icon">
+                    <div id='day0main' class='forecast'></div>
+                    <div id='day0high' class='forecast'></div>
+                    <div id='day0low' class='forecast'></div>
+                    <div id='day0humid' class='forecast'></div>
+                </div>
+                <div class="row xf">
+                    <div id='day1' class='bold wide'></div>
+                    <img src='' id="day1icon">
+                    <div id='day1main' class='forecast'></div>
+                    <div id='day1high' class='forecast'></div>
+                    <div id='day1low' class='forecast'></div>
+                    <div id='day1humid' class='forecast'></div>
+                </div>
+                <div class="row xf">
+                    <div id='day2' class='bold wide'></div>
+                    <img src='' id="day2icon">
+                    <div id='day2main' class='forecast'></div>
+                    <div id='day2high' class='forecast'></div>
+                    <div id='day2low' class='forecast'></div>
+                    <div id='day2humid' class='forecast'></div>
+                </div>
+                <div class="row xf">
+                    <div id='day3' class='bold wide'></div>
+                    <img src='' id="day3icon">
+                    <div id='day3main' class='forecast'></div>
+                    <div id='day3high' class='forecast'></div>
+                    <div id='day3low' class='forecast'></div>
+                    <div id='day3humid' class='forecast'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
-
-
-
-
-
-
-    
-    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="style.css"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
