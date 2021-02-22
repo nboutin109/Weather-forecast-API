@@ -11,7 +11,7 @@ $(function () {
   function searchWeather(searchValue) {
     $.ajax({
       type: "GET",
-      url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=" + API + "&units=imperial",
+      url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=a5a6719c38e6bf0209c461f1f0f255ca&units=imperial",
       dataType: "json",
       success: function (data) {
         console.log(data)
@@ -35,7 +35,7 @@ $(function () {
         $("#city").html(city);
         $.ajax({
           type: "GET",
-          url: "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "9&exclude=current,minutely,hourly,alert&appid=" + API + "&units=imperial",
+          url: "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "9&exclude=current,minutely,hourly,alert&appid=a5a6719c38e6bf0209c461f1f0f255ca&units=imperial",
           dataType: "json",
           success: function (data) {
             for (i = 0; i < 4; i++) {
@@ -56,7 +56,7 @@ $(function () {
             }
             $.ajax({
               type: "GET",
-              url: "https://pixabay.com/api/?key="+ API2 + "&q=" + imgPlug,
+              url: "https://pixabay.com/api/?key=20327596-352360f8a2ed6166a8179e672&q=" + imgPlug,
               dataType: "json",
               success: function (data) {
                 console.log(data);
