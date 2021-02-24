@@ -51,7 +51,6 @@ $(function () {
               $('#' + id + 'low').html(min);
               $('#' + id + 'humid').html(humidity);
               $('#' + id + 'icon').attr("src", src);
-              var dayCheck = moment().add(i + 1, 'days').weekday()
               $('#' + id).html(moment().add(i + 1, 'days').format("dddd"))
             }
             $.ajax({
@@ -59,28 +58,24 @@ $(function () {
               url: "https://pixabay.com/api/?key=20327596-352360f8a2ed6166a8179e672&q=" + imgPlug,
               dataType: "json",
               success: function (data) {
-                console.log(data);
                 var pull = data.hits[0].webformatURL
                 $('#mainImg').attr("src", pull);
               },
               error: function (error) {
                 console.log(error);
-                $('.icon').attr("src", '');
-                $('#errorDiv').html("Oops! Something went wrong!");
+                $('#city').html("Oops! Something went wrong!");
               }
             });
           },
           error: function (error) {
             console.log(error);
-            $('.icon').attr("src", '');
-            $('#errorDiv').html("Oops! Something went wrong!");
+            $('#city').html("Oops! Something went wrong!");
           }
         });
       },
       error: function (error) {
         console.log(error);
-        $('.icon').attr("src", '');
-        $('#errorDiv').html("Oops! Something went wrong!");
+        $('#city').html("Oops! Something went wrong!");
       }
     });
   }
