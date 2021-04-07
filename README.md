@@ -1,6 +1,6 @@
 # Title
-Weather Forecast Dashboard
-A singple page application which provides a 5-day weather forecast for a searched city. Auto-populates New-York on startup.
+<p>Weather Forecast Dashboard</p>
+<p>A singple page application which provides a 5-day weather forecast for a searched city. Auto-populates New-York on startup.</p>
 <a href="https://nboutin109.github.io/Weather-forecast-API/"><img src="Capture6.PNG" height="250px" width="250px"/> </a>
 
 # Installation
