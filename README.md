@@ -1,6 +1,6 @@
 # Title
 <p>Weather Forecast Dashboard</p>
-<p>A singple page application which provides a 5-day weather forecast for a searched city. Auto-populates New-York on startup.</p>
+<p>A single page application which provides a 5-day weather forecast for a searched city. Auto-populates New-York on startup.</p>
 <a href="https://nboutin109.github.io/Weather-forecast-API/"><img src="Capture6.PNG" height="250px" width="250px"/> </a>
 
 # Installation
@@ -16,4 +16,4 @@
 </ul>
 
 ## Code Overview
-On rendering, the user interface is created from the index.html page and styled with the included .css file and Bootstrap. The script.js page then runs a single function to search for weather data from New York with multiple AJAX calls and changes the HTML values on the page. The same function executes for a different city whenever the search button is clicked.
+<p>On startup, the user interface is created from the index.html page and styled with the included .css file and Bootstrap. The script.js page then runs a single function to search for weather data from New York City with multiple AJAX calls and changes the HTML values on the page. The same function executes for a different city whenever the search button is clicked.</p>
